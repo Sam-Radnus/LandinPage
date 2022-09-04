@@ -11,6 +11,8 @@ import vector3 from './../Images/Vector(3).png'
 import vector4 from './../Images/Vector(4).png'
 import vector5 from './../Images/Vector(5).png'
 import vector6 from './../Images/Vector(6).png'
+import rectangle from './../Images/rectangle.png'
+import ellipse from './../Images/ellipse.png'
 import { Link } from 'react-router-dom'
 import { useState,useEffect } from 'react'
 import title from './../Images/title.png'
@@ -65,7 +67,7 @@ const SignIn = () => {
                         <label className="form-check-label" for="exampleCheck1">Remember Me</label>
                     </div>
                     
-                        <Link id="forgot" to="/">Forgot Password</Link>
+                        <Link id="forgot" to="/">Forgot Password?</Link>
                     </div>
                     <div id="sign">
                         <button type="button" id="wideBtn" className="btn btn-primary">Sign-In</button>
@@ -101,6 +103,15 @@ const SignIn = () => {
                 <div id="vector6" >
                      <img src={vector6} height='100%' width='100%'/>
                 </div>
+                <div id="vector2" >
+                     <img src={vector2} height='100%' width='100%'/>
+                </div>
+                <div id="vector3" >
+                     <img src={vector2} height='100%' width='100%'/>
+                </div>
+                <div id="vector41" >
+                     <img src={vector2} height='100%' width='100%'/>
+                </div>
                 <div id="balance3" >
                     <h1>Get better with Money</h1>
                 </div>
@@ -108,11 +119,22 @@ const SignIn = () => {
                     <p>
                         Overplay helps you reach your saving goals,earn cash back offers,Go to disclaimer
                         for more details and get paychecks up to two days early.Get a <small>$20 </small>
-                        bonus when you receive qaulifying direct deposits
+                        bonus when you receive qualifying direct deposits
                     </p>
                 </div>
                 <div id="vector4" >
                      <img src={vector4} height='100%' width='100%'/>
+                </div>
+                <div id="pagination">
+                <div id="rectangle" >
+                    
+                </div>
+                <div id="ellipse" >
+                    
+                </div>
+                <div id="ellipse" >
+                  
+                </div>
                 </div>
             </div>}
             
