@@ -10,7 +10,7 @@ const Need = () => {
        <Navbar/>
        <div id="center">
        <h1>Verify Your E-Mail</h1>
-       <div style={{textAlign:'center',width:'25vw'}}>
+       <div style={{textAlign:'center',width:'465px'}}>
        <p>Enter the E-Mail Address associated with your account and we will send you a link to reset your password</p>
        <div  className="form-floating mb-3">
                         <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
@@ -22,6 +22,10 @@ const Need = () => {
       }}>Send Link</button>
        <b>Forgot your email?</b>
       </div>
+      <div id="footer2">
+                    <p id="first">Privacy Policy</p>
+                    <p id="second">Copyright 2022</p>
+                </div>
     </div>
   )
 }

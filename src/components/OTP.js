@@ -22,15 +22,19 @@ const OTP = () => {
         onChange={handleChange}
         numInputs={5}
         containerStyle={{height:"10vh",padding:'12px',width:'fit-content'}}
-        inputStyle={{height:'6vh',width:'3vw',borderRadius:'5px',borderWidth:'1px'}}
+        inputStyle={{height:'6vh',width:'50px',borderRadius:'5px',borderWidth:'1px'}}
         focusStyle={{borderColor:'blue',borderWidth:'1px'}}
         separator={<span>-</span>}
       />
-      <button onClick={()=>{
+      <button style={{padding:'10px',height:'fit-content'}} onClick={()=>{
         navigate('/Need')
       }}>Verify Account</button>
       <p><span>Resend Code in:</span><b>59:00</b></p>
       </div>
+      <div id="footer2">
+                    <p id="first">Privacy Policy</p>
+                    <p id="second">Copyright 2022</p>
+                </div>
     </div>
   )
 }

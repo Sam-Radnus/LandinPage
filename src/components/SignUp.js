@@ -38,38 +38,39 @@ const SignUp = () => {
         dimensions.width > 851 ? setMobile(true) : setMobile(false);
     }, [dimensions.width]);
     return (
-        <div style={{width:'90vw'}}>
-            <div id="send" style={{ backgroundColor: 'white' }}>
-                <img id="logo" alt="logo" src={image} style={{ marginTop: '2vh' }} height='20' width='149px'></img>
+        <div >
+            <div id={`send${mobile?'':'2'}`} style={{ backgroundColor: 'white' }}>
+                <img id="logo" alt="logo" src={image} style={{ marginTop: '2vh' ,marginLeft:'24px',
+marginTop: '24px'}} height='20' width='149px'></img>
                 <div id="submit">
                     <div className="heading"><h1 >Sign Up to Overpay</h1>
 
                         <br />
                         <p>Send,spend and save smarter</p>
                     </div>
-                    <button id="social">
+                    <button style={{width:'465px'}} id="social">
                         <img alt="logo" src={google} height='20' width='20'></img>
-                        {mobile && <p>Sign In with Google</p>}
+                         <p>Sign In with Google</p>
                     </button>
 
 
                     <div ><p id="strike">{mobile ? <span>Or with email</span> : <span>or</span>}</p></div>
-                    <div id="name" class="row">
+                    <div id="name" class="row" >
                         <div class="col form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="First name" />
+                            <input  type="text" class="form-control" id="floatingInput" style={{width:`${mobile?'215px':'465px'}`}} placeholder="First name" />
                             <label id="pad" for="floatingInput">First Name</label>
                         </div>
                         <div class="col form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Last name" />
+                            <input  type="text" class="form-control" id="floatingInput"  style={{width:`${mobile?'215px':'465px'}`}}  placeholder="Last name" />
                             <label id="pad" for="floatingInput">Last Name</label>
                         </div>
                     </div>
                     <div  className="form-floating mb-3">
-                        <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
+                        <input type="email" className="form-control" id="floatingInput" style={{width:'465px'}} placeholder="name@example.com" />
                         <label for="floatingInput">Email address</label>
                     </div>
                     <div className="form-floating">
-                        <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
+                        <input type="password" className="form-control" id="floatingPassword" style={{width:'465px'}} placeholder="Password" />
                         <label for="floatingPassword">Password</label>
                     </div>
                     <div id="link">

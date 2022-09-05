@@ -39,32 +39,33 @@ const SignIn = () => {
     return (
         <div>
             <div id="form">
-                <img alt="logo" src={image} style={{marginTop:'2vh'}}height='32px' width='149px'></img>
+                <img alt="logo" src={image} style={{marginTop:'2vh',marginLeft:'24px',
+marginTop: '24px'}}height='32px' width='149px'></img>
                 <div id="submit">
-                <div className="heading"><h1 >Sign In to Overpay</h1>
+                <div className="heading"><h1 style={{marginTop:'3vh'}} >Sign In to Overpay</h1>
                     
                     <br/>
                     <p>Send,spend and save smarter</p>
                    </div>
-                    <button  id="social">
-                        <img alt="logo" src={google} height='20' width='20'></img>
-                        {mobile&&<p>Sign In with Google</p>}   
+                    <button   style={{width:'465px'}} id="social">
+                        <img alt="logo" src={google} style={{textAlign:'center'}} height='20' width='20'></img>
+                    <p>Sign In with Google</p>   
                     </button>
                     
                     
                     <div ><p id="strike">{mobile?<span>Or with email</span>:<span>or</span>}</p></div>
 
-                    <div style={{marginTop:'50px'}} className="form-floating mb-3">
-                        <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
+                    <div style={{marginTop:'50px'}}  className="form-floating mb-3">
+                        <input  type="email" className="form-control" style={{width:'465px'}} id="floatingInput" placeholder="name@example.com" />
                         <label for="floatingInput">Email address</label>
                     </div>
                     <div className="form-floating">
-                        <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
+                        <input type="password" className="form-control" style={{width:'465px'}} id="floatingPassword" placeholder="Password" />
                         <label for="floatingPassword">Password</label>
                     </div>
                     <div id="link">
                     <div id="line" className="mb-3 form-check">
-                        <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                        <input type="checkbox" className="form-check-input"  id="exampleCheck1" />
                         <label className="form-check-label" for="exampleCheck1">Remember Me</label>
                     </div>
                     
@@ -81,7 +82,7 @@ const SignIn = () => {
                     </div>
 
                 </div>
-                <div id="footer">
+                <div id={`footer${mobile?'':'Small'}`}>
                     <p id="first">Privacy Policy</p>
                     <p id="second">Copyright 2022</p>
                 </div>

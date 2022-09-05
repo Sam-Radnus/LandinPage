@@ -13,6 +13,10 @@ const LoggedIn = () => {
        <p>You're Logged In,Well Done</p>
        <button>Log Out</button>
       </div>
+      <div id="footer2">
+                    <p style={{width:'10vw'}} id="first">Privacy Policy</p>
+                    <p style={{width:'10vw'}} id="second">Copyright 2022</p>
+                </div>
     </div>
   )
 }

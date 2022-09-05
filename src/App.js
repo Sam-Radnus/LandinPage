@@ -15,6 +15,7 @@ function App() {
     <Router>
    <div>
     <Routes>
+    <Route exact path="/" element={<SignIn/>}></Route>
       <Route exact path="/SignIn" element={<SignIn/>}></Route>
       <Route exact path="/SignUp" element={<SignUp/>}></Route>
       <Route exact path="/OTP" element={<OTP/>}></Route>
