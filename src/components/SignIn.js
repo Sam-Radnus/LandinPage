@@ -13,7 +13,7 @@ import vector5 from './../Images/Vector(5).png'
 import vector6 from './../Images/Vector(6).png'
 import rectangle from './../Images/rectangle.png'
 import ellipse from './../Images/ellipse.png'
-import { Link } from 'react-router-dom'
+import { Link ,useNavigate} from 'react-router-dom'
 import { useState,useEffect } from 'react'
 import title from './../Images/title.png'
 import body from './../Images/body.png'
@@ -23,6 +23,7 @@ const SignIn = () => {
       width:window.innerWidth,
       height:window.innerHeight
     })
+    const navigate=useNavigate();
     const handleResize=()=>{
          setDimensions({
           width:window.innerWidth,
@@ -38,7 +39,7 @@ const SignIn = () => {
     return (
         <div>
             <div id="form">
-                <img alt="logo" src={image} style={{marginTop:'2vh'}}height='40' width='150'></img>
+                <img alt="logo" src={image} style={{marginTop:'2vh'}}height='32px' width='149px'></img>
                 <div id="submit">
                 <div className="heading"><h1 >Sign In to Overpay</h1>
                     
@@ -70,7 +71,9 @@ const SignIn = () => {
                         <Link id="forgot" to="/">Forgot Password?</Link>
                     </div>
                     <div id="sign">
-                        <button type="button" id="wideBtn" className="btn btn-primary">Sign-In</button>
+                        <button type="button" id="wideBtn" onClick={()=>{
+                            navigate('/OTP')
+                        }} className="btn btn-primary">Sign-In</button>
                     </div>
                     <br />
                     <div  className="heading" id="sign">

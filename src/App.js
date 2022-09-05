@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
+import Navbar from './components/Navbar';
+import OTP from './components/OTP';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -14,6 +16,7 @@ function App() {
     <Routes>
       <Route exact path="/SignIn" element={<SignIn/>}></Route>
       <Route exact path="/SignUp" element={<SignUp/>}></Route>
+      <Route exact path="/OTP" element={<OTP/>}></Route>
       </Routes>
    </div>
    </Router>
