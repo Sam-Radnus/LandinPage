@@ -2,8 +2,10 @@ import React from 'react'
 import Navbar from './Navbar'
 import OtpInput from 'react-otp-input';
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 const OTP = () => {
   const[state,setState]=useState()
+  const navigate=useNavigate();
   const handleChange = (otp) => setState(otp);
   return (
     <div>
@@ -24,7 +26,9 @@ const OTP = () => {
         focusStyle={{borderColor:'blue',borderWidth:'1px'}}
         separator={<span>-</span>}
       />
-      <button>Verify Account</button>
+      <button onClick={()=>{
+        navigate('/Need')
+      }}>Verify Account</button>
       <p><span>Resend Code in:</span><b>59:00</b></p>
       </div>
     </div>

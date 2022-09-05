@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
-import Navbar from './components/Navbar';
+import Need from './components/Need';
+import LoggedIn from './components/LoggedIn';
 import OTP from './components/OTP';
 import './App.css';
 import {
@@ -17,6 +18,8 @@ function App() {
       <Route exact path="/SignIn" element={<SignIn/>}></Route>
       <Route exact path="/SignUp" element={<SignUp/>}></Route>
       <Route exact path="/OTP" element={<OTP/>}></Route>
+      <Route exact path="/Need" element={<Need/>}></Route>
+      <Route exact path="/LoggedIn" element={<LoggedIn/>}></Route>
       </Routes>
    </div>
    </Router>

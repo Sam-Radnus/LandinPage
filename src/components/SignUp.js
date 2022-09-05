@@ -78,7 +78,7 @@ const SignUp = () => {
                             <label className="form-check-label" for="exampleCheck1">Remember Me</label>
                         </div>
 
-                        <Link id="forgot" to="/">Forgot Password?</Link>
+                        <Link id="forgot" to="/Need">Forgot Password?</Link>
                     </div>
                     <p id="privacy">By creating an account, you agreeing to our <b>Privacy Policy</b>, and <b>Electronics Communication Policy.</b></p>
                     <div id="sign">

@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from './../Images/logo4.png'
+import {  useNavigate } from 'react-router-dom'
 const Navbar = () => {
+    const navigate=useNavigate();
     return (
         <div>
             <nav id="black" style={{backgroundColor:'#1A202C'}} className="navbar  navbar-expand-lg navbar-custom">
@@ -11,7 +13,9 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <img alt="logo" src={logo} style={{position:'absolute'}} height='32px' width='32px'></img>
                         <h1 style={{color:'white',marginTop:'7px',marginLeft:'40px',fontSize:'32px'}}>Overpay</h1>
-                        <button className="btn btn-primary" style={{ marginLeft: '78vw' ,width:'fit-content' }} type="submit">Sign-In</button>
+                        <button className="btn btn-primary" onClick={()=>{
+                           navigate('/SignIn')
+                        }} style={{ marginLeft: '78vw' ,width:'fit-content' }} type="submit">Sign-In</button>
 
                     </div>
                 </div>

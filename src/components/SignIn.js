@@ -68,7 +68,7 @@ const SignIn = () => {
                         <label className="form-check-label" for="exampleCheck1">Remember Me</label>
                     </div>
                     
-                        <Link id="forgot" to="/">Forgot Password?</Link>
+                        <Link id="forgot" to="/Need">Forgot Password?</Link>
                     </div>
                     <div id="sign">
                         <button type="button" id="wideBtn" onClick={()=>{
