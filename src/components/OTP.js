@@ -32,8 +32,8 @@ const OTP = () => {
       <p><span>Resend Code in:</span><b>59:00</b></p>
       </div>
       <div id="footer2">
-                    <p id="first">Privacy Policy</p>
-                    <p id="second">Copyright 2022</p>
+                    <p style={{width:'max-content'}} id="first">Privacy Policy</p>
+                    <p style={{width:'max-content'}} id="second">Copyright 2022</p>
                 </div>
     </div>
   )

@@ -5,20 +5,16 @@ import Form from './../Images/background.png'
 import google from './../Images/google.png'
 import { useNavigate } from 'react-router-dom'
 import group from './../Images/Group254.png'
-import balance1 from './../Images/balance1.png'
-import balance2 from './../Images/balance2.png'
+
 import vector1 from './../Images/Vector(1).png'
 import vector2 from './../Images/Vector(2).png'
-import vector3 from './../Images/Vector(3).png'
+
 import vector4 from './../Images/Vector(4).png'
 import vector5 from './../Images/Vector(5).png'
 import vector6 from './../Images/Vector(6).png'
-import rectangle from './../Images/rectangle.png'
-import ellipse from './../Images/ellipse.png'
+
 import { Link  } from 'react-router-dom'
 
-import title from './../Images/title.png'
-import body from './../Images/body.png'
 
 const SignUp = () => {
     const [mobile, setMobile] = useState(window.innerWidth < 851);
@@ -40,7 +36,7 @@ const SignUp = () => {
     return (
         <div >
             <div id={`send${mobile?'':'2'}`} style={{ backgroundColor: 'white' }}>
-                <img id="logo" alt="logo" src={image} style={{ marginTop: '2vh' ,marginLeft:'24px',
+                <img id="logo" alt="logo" src={image} style={{  marginLeft:'24px',
 marginTop: '24px'}} height='20' width='149px'></img>
                 <div id="submit">
                     <div className="heading"><h1 >Sign Up to Overpay</h1>
@@ -55,13 +51,13 @@ marginTop: '24px'}} height='20' width='149px'></img>
 
 
                     <div ><p id="strike">{mobile ? <span>Or with email</span> : <span>or</span>}</p></div>
-                    <div id="name" class="row" >
-                        <div class="col form-floating mb-3">
-                            <input  type="text" class="form-control" id="floatingInput" style={{width:`${mobile?'215px':'465px'}`}} placeholder="First name" />
+                    <div id="name" className="row" >
+                        <div className="col form-floating mb-3">
+                            <input  type="text" className="form-control" id="floatingInput" style={{width:`${mobile?'215px':'465px'}`}} placeholder="First name" />
                             <label id="pad" for="floatingInput">First Name</label>
                         </div>
-                        <div class="col form-floating mb-3">
-                            <input  type="text" class="form-control" id="floatingInput"  style={{width:`${mobile?'215px':'465px'}`}}  placeholder="Last name" />
+                        <div className="col form-floating mb-3">
+                            <input  type="text" className="form-control" id="floatingInput"  style={{width:`${mobile?'215px':'465px'}`}}  placeholder="Last name" />
                             <label id="pad" for="floatingInput">Last Name</label>
                         </div>
                     </div>
@@ -98,26 +94,26 @@ marginTop: '24px'}} height='20' width='149px'></img>
 
             {mobile && <div id="form" style={{ backgroundImage: `url(${Form})` }}>
                 <div id="vector12" >
-                    <img src={vector1} height='100%' width='100%' />
+                    <img  alt="vector" src={vector1} height='100%' width='100%' />
                 </div>
                 <div id="group2" >
-                    <img src={group} height='100%' width='100%' />
+                    <img  alt="vector"src={group} height='100%' width='100%' />
                 </div>
 
                 <div id="vector52" >
-                    <img src={vector5} height='100%' width='100%' />
+                    <img alt="vector" src={vector5} height='100%' width='100%' />
                 </div>
                 <div id="vector62" >
-                    <img src={vector6} height='100%' width='100%' />
+                    <img alt="vector" src={vector6} height='100%' width='100%' />
                 </div>
                 <div id="vector22" >
-                    <img src={vector2} height='100%' width='100%' />
+                    <img  alt="vector"src={vector2} height='100%' width='100%' />
                 </div>
                 <div id="vector32" >
-                    <img src={vector2} height='100%' width='100%' />
+                    <img alt="vector" src={vector2} height='100%' width='100%' />
                 </div>
                 <div id="vector42" >
-                    <img src={vector2} height='100%' width='100%' />
+                    <img  alt="vector"src={vector2} height='100%' width='100%' />
                 </div>
                 <div id="balance3" >
                     <h1>Speady,Easy and Fast</h1>
@@ -130,7 +126,7 @@ marginTop: '24px'}} height='20' width='149px'></img>
                     </p>
                 </div>
                 <div id="vector4" >
-                    <img src={vector4} height='100%' width='100%' />
+                    <img src={vector4} alt="vector" height='100%' width='100%' />
                 </div>
                 <div id="pagination">
                     <div id="ellipse21" >

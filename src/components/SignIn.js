@@ -7,16 +7,14 @@ import balance1 from './../Images/balance1.png'
 import balance2 from './../Images/balance2.png'
 import vector1 from './../Images/Vector(1).png'
 import vector2 from './../Images/Vector(2).png'
-import vector3 from './../Images/Vector(3).png'
+
 import vector4 from './../Images/Vector(4).png'
 import vector5 from './../Images/Vector(5).png'
 import vector6 from './../Images/Vector(6).png'
-import rectangle from './../Images/rectangle.png'
-import ellipse from './../Images/ellipse.png'
+
 import { Link ,useNavigate} from 'react-router-dom'
 import { useState,useEffect } from 'react'
-import title from './../Images/title.png'
-import body from './../Images/body.png'
+
 const SignIn = () => {
     const [mobile,setMobile]=useState(window.innerWidth<851);
     const [dimensions,setDimensions]=useState({
@@ -39,7 +37,7 @@ const SignIn = () => {
     return (
         <div>
             <div id="form">
-                <img alt="logo" src={image} style={{marginTop:'2vh',marginLeft:'24px',
+                <img alt="logo" src={image} style={{marginLeft:'24px',
 marginTop: '24px'}}height='32px' width='149px'></img>
                 <div id="submit">
                 <div className="heading"><h1 style={{marginTop:'3vh'}} >Sign In to Overpay</h1>
@@ -90,31 +88,31 @@ marginTop: '24px'}}height='32px' width='149px'></img>
 
            { mobile&&<div id="send" style={{ backgroundImage: `url(${Form})` }}>
                 <div id="vector1" >
-                     <img src={vector1} height='100%' width='100%'/>
+                     <img  alt="logo" src={vector1} height='100%' width='100%'/>
                 </div>
                 <div id="group" >
-                    <img src={group} height='100%' width='100%'/>
+                    <img alt="logo"  src={group} height='100%' width='100%'/>
                 </div>
                 <div id="balance1" >
-                    <img src={balance1} height='100%' width='100%'/>
+                    <img alt="logo"  src={balance1} height='100%' width='100%'/>
                 </div>
                 <div id="balance2" >
-                    <img src={balance2} height='100%' width='100%'/>
+                    <img alt="logo"  src={balance2} height='100%' width='100%'/>
                 </div>
                 <div id="vector5" >
-                     <img src={vector5} height='100%' width='100%'/>
+                     <img  alt="logo" src={vector5} height='100%' width='100%'/>
                 </div>
                 <div id="vector6" >
-                     <img src={vector6} height='100%' width='100%'/>
+                     <img alt="logo"  src={vector6} height='100%' width='100%'/>
                 </div>
                 <div id="vector2" >
-                     <img src={vector2} height='100%' width='100%'/>
+                     <img  alt="logo" src={vector2} height='100%' width='100%'/>
                 </div>
                 <div id="vector3" >
-                     <img src={vector2} height='100%' width='100%'/>
+                     <img alt="logo"  src={vector2} height='100%' width='100%'/>
                 </div>
                 <div id="vector41" >
-                     <img src={vector2} height='100%' width='100%'/>
+                     <img  alt="logo" src={vector2} height='100%' width='100%'/>
                 </div>
                 <div id="balance3" >
                     <h1>Get better with Money</h1>
@@ -127,7 +125,7 @@ marginTop: '24px'}}height='32px' width='149px'></img>
                     </p>
                 </div>
                 <div id="vector4" >
-                     <img src={vector4} height='100%' width='100%'/>
+                     <img alt="vector" src={vector4} height='100%' width='100%'/>
                 </div>
                 <div id="pagination">
                 <div id="rectangle" >
