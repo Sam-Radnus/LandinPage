@@ -8,7 +8,7 @@ const Need = () => {
     <div>
        <Navbar/>
        <div id="center">
-       <h1>Verify Your E-Mail</h1>
+       <h1>Need help with your account</h1>
        <div style={{textAlign:'center',width:'450px'}}>
        <p>Enter the E-Mail Address associated with your account and we will send you a link to reset your password</p>
        <div  className="form-floating mb-3">
@@ -16,7 +16,7 @@ const Need = () => {
                         <label for="floatingInput">Email address</label>
                     </div>
        </div>
-      <button onClick={()=>{
+      <button style={{width:'450px'}} onClick={()=>{
         navigate('/LoggedIn')
       }}>Send Link</button>
        <b>Forgot your email?</b>
