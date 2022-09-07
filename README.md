@@ -49,8 +49,8 @@ npm run start
 ### OTP Page
 ![OTP](./src/Images/OTP.png)
 ### Verification Page
-![Verify](./src/Images/Verify.png)
+![Verify](./src/Images/Verify2.png)
 ### Profile Page
-![LogOut](./src/Images/LogOut.png)
+![LogOut](./src/Images/LogOut2.png)
 
 
