@@ -14,7 +14,7 @@ const Navbar = () => {
     <Link style={{color:'white'}}  to='/' className="navbar-brand"> <img alt="logo" src={logo}  height='20px' width='20px'></img> Overpay</Link>
     <form className="d-flex">
      
-      <button className="btn btn-primary" style={{backgroundColor:'rgb(25,75,251)'}} onClick={()=>{navigate('/SignIn')}}type="submit">{window.location.href!=='http://localhost:3000/LoggedIn'?'Sign-In':'Log Out'}</button>
+      <button className="btn btn-primary" style={{backgroundColor:'rgb(25,75,251)'}} onClick={()=>{navigate('/SignIn')}}type="submit">{window.location.href!=='https://landing-page-ebon-five.vercel.app/LoggedIn'?'Sign-In':'Log Out'}</button>
     </form>
   </div>
 </nav>
