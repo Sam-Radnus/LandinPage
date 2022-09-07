@@ -17,7 +17,7 @@ import { Link  } from 'react-router-dom'
 
 
 const SignUp = () => {
-    const [mobile, setMobile] = useState(window.innerWidth < 851);
+    const [mobile, setMobile] = useState(window.innerWidth < 1051);
     const [dimensions, setDimensions] = useState({
         width: window.innerWidth,
         height: window.innerHeight
@@ -31,12 +31,12 @@ const SignUp = () => {
     }
     useEffect(() => {
         window.addEventListener("resize", handleResize, false);
-        dimensions.width > 851 ? setMobile(true) : setMobile(false);
+        dimensions.width > 1051 ? setMobile(true) : setMobile(false);
     }, [dimensions.width]);
     return (
-        <div >
+        <div style={{height:'100vh'}}>
             <div id={`send${mobile?'':'2'}`} style={{ backgroundColor: 'white' }}>
-                <img id="logo" alt="logo" src={image} style={{  marginLeft:'24px',
+                <img id="logo" alt="logo" src={image} style={{  marginLeft:'35px',
 marginTop: '24px'}} height='20' width='149px'></img>
                 <div id="submit">
                     <div className="heading"><h1 >Sign Up to Overpay</h1>
@@ -51,14 +51,16 @@ marginTop: '24px'}} height='20' width='149px'></img>
 
 
                     <div ><p id="strike">{mobile ? <span>Or with email</span> : <span>or</span>}</p></div>
-                    <div id="name" className="row" >
-                        <div className="col form-floating mb-3">
+                    <div id="name" className="row" style={{padding:'0px',width:'500px'}} >
+                     
+                        <div  style={{width:'fit-content',marginLeft:'15px',padding:'0px'}} className="col form-floating mb-3">
                             <input  type="text" className="form-control" id="floatingInput" style={{width:`${mobile?'215px':'465px'}`}} placeholder="First name" />
                             <label id="pad" for="floatingInput">First Name</label>
                         </div>
-                        <div className="col form-floating mb-3">
+                        <div style={{width:'fit-content',marginLeft:'15px',padding:'0px'}} className="col form-floating mb-3">
                             <input  type="text" className="form-control" id="floatingInput"  style={{width:`${mobile?'215px':'465px'}`}}  placeholder="Last name" />
                             <label id="pad" for="floatingInput">Last Name</label>
+                        
                         </div>
                     </div>
                     <div  className="form-floating mb-3">
@@ -92,7 +94,7 @@ marginTop: '24px'}} height='20' width='149px'></img>
            
             </div>
 
-            {mobile && <div id="form" style={{ backgroundImage: `url(${Form})` }}>
+            {mobile && <div id="form" style={{ backgroundImage: `url(${Form})` ,height:'110vh'}}>
                 <div id="vector12" >
                     <img  alt="vector" src={vector1} height='100%' width='100%' />
                 </div>

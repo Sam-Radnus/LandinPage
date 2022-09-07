@@ -16,7 +16,7 @@ import { Link ,useNavigate} from 'react-router-dom'
 import { useState,useEffect } from 'react'
 
 const SignIn = () => {
-    const [mobile,setMobile]=useState(window.innerWidth<851);
+    const [mobile,setMobile]=useState(window.innerWidth<1051);
     const [dimensions,setDimensions]=useState({
       width:window.innerWidth,
       height:window.innerHeight
@@ -30,7 +30,7 @@ const SignIn = () => {
     }
     useEffect(()=>{
       window.addEventListener("resize",handleResize,false);
-      dimensions.width>851?setMobile(true):setMobile(false);
+      dimensions.width>1051?setMobile(true):setMobile(false);
     },[dimensions.width]);
 
     
@@ -86,7 +86,7 @@ marginTop: '24px'}}height='32px' width='149px'></img>
                 </div>
             </div>
 
-           { mobile&&<div id="send" style={{ backgroundImage: `url(${Form})` }}>
+           { mobile&&<div id="send" style={{ backgroundImage: `url(${Form})`,height:'110vh' }}>
                 <div id="vector1" >
                      <img  alt="logo" src={vector1} height='100%' width='100%'/>
                 </div>

@@ -57,7 +57,7 @@ div[id="send"] {
   position: absolute;
   width: 50vw;
   height: 100vh;
-  left: 800px;
+  left: 50vw;
   /* Primary/Base */
   background: #194BFB;
 }
@@ -189,7 +189,7 @@ div[id="footer"] {
   width: 50vw;
   height: 3vw;
   display: flex;
-  gap:500px;
+  gap:30vw;
   color: rgb(152, 148, 148);
 }
 div[id="footerSmall"] {
