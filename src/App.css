@@ -8,6 +8,9 @@ h1 {
   font-weight: 800;
   font-size: 32px;
 }
+* {
+ 
+}
 
 /* background */
 div[class="background"] {
@@ -93,7 +96,7 @@ div[id="link"] {
   padding: 5px;
   align-items: center;
   padding: 0px;
-  gap: 18vw;
+  gap: 220px;
 
   font-size: 15px;
   width: 507px;
@@ -153,7 +156,7 @@ button[id="social"] {
   border-radius: 10px;
   width: 30vw;
   height: 56px;
-  overflow: auto;
+  
   left: 175px;
   top: 348px;
 }
